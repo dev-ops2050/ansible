@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  tasks:
+
+  - name: install httpd package
+    yum:		
+      name: httpd
+      
+  - name: install vim package
+    yum: 	
+      name: vim

@@ -1,0 +1,14 @@
+---
+
+- hosts: 192.168.0.11 
+  tasks:
+
+  - name: remove httpd package
+    yum:		
+      name: httpd
+      state: absent
+      
+  - name: remove vim package
+    yum: 	
+      name: vim
+      state: absent
