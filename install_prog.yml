@@ -6,7 +6,8 @@
   - name: install httpd package
     yum:		
       name: httpd
-      
+    when: ansible_distribution == "CentOS"      
   - name: install vim package
     yum: 	
       name: vim
+    when: ansible_distribution == "CentOS"      
